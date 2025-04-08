@@ -1,0 +1,28 @@
+.button {
+    white-space: nowrap;
+    height: 69px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &__red {
+       background: #CF3337;
+       color: #FFFFFF; 
+    }
+
+    &__white {
+        border: 1px solid #F2E5CC;
+        color: #F2E5CC; 
+    }
+
+    &__silver {
+        border: 1px solid #514F4D;
+        color: #514F4D; 
+     }
+}

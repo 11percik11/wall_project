@@ -1,0 +1,204 @@
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding: 24px 0px;
+    background-color: #FAFAFA;
+    border-radius: 36px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    height: 265px;
+    overflow: hidden;
+
+    @media (max-width: 420px) {
+      height: 200px;
+    }
+  }
+
+  .keyboardNumber {
+    height: 265px;
+    max-width: 600px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .keyboardText {
+    max-width: 1014px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .keyboardContent {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+  }
+  
+  .hiddenLeft {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .hiddenRight {
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+
+    @media (max-width: 920px) {
+      gap: 2px;
+    }
+  }
+  
+  .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    max-width: 65px;
+    width: 100%;
+    padding: 0 10px;
+    color: #373737;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+    box-shadow: 0px 1px 0px 0px #0000004D;
+  
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  
+    &:active {
+      background-color: #d0d0d0;
+    }
+
+    @media (max-width: 920px) {
+      min-width: 34px;
+      // height: 42px;
+      padding: 0 0px;
+    }
+
+    @media (max-width: 420px) {
+      min-width: 20px;
+      height: 32px;
+      padding: 0 5px;
+    }
+  }
+
+  .keyNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    min-width: 105px;
+    padding: 0 10px;
+    color: #373737;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+    box-shadow: 0px 1px 0px 0px #0000004D;
+  
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  
+    &:active {
+      background-color: #d0d0d0;
+    }
+
+
+    @media (max-width:380px) {
+      min-width: 80px;
+    }
+  }
+  
+  .backspace {
+    width: 103px;
+    background-color: #EBEBEB;
+  }
+
+  .backspaceTrue {
+    background-color: #FFFFFF;
+  }
+
+  .backspaceIconBalck {
+    width: 20px;
+    height: 17px;
+  }
+
+  .buttonNumber {
+    max-width: 72px;
+    width: 100%;
+    background-color: #EBEBEB;
+    font-size: 18px;
+    font-weight: 500;
+    width: 80px;
+  }
+
+  .backspaceNumber {
+    @media (max-width: 380px) {
+      width: 80px;
+    }
+  }
+  
+  .enter {
+    max-width: 143px;
+    width: 100%;
+    background-color: #CF3337;
+    color: #FFFFFF;
+
+
+  }
+
+  .space {
+    max-width: 552px;
+    width: 100%;
+  }
+  
+  .language {
+    min-width: 70px;
+    background-color: #9999cc;
+  }
+  
+  .number {
+    min-width: 70px;
+    background-color: #cccc99;
+  }
+
+  .crossSvg {
+    margin: 10px auto 0px auto;
+    width: 88px;
+    height: 56px;
+    border-radius: 24px;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media (max-width: 920px) {
+      width: 44px;
+      height: 28px;
+      margin: 1px auto;
+    }
+  }

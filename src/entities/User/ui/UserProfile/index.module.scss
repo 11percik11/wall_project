@@ -1,0 +1,97 @@
+.userProfile{
+    display: flex;
+    gap: 80px;
+    padding-bottom: 68px;
+    color: black;
+
+    &__avatar {
+        width: 576px;
+        height: 768px;
+
+        @media (max-width: 1400px) {
+            width: 288px;
+            height: 384px;
+        }
+    }
+
+    &__information {
+        padding-top: 64px;
+        flex: 1;
+        
+        &_container {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 1100px) {
+                flex-direction: column;
+            }
+        }
+
+        &_boxItem {
+            margin-bottom: 52px;
+
+            @media (max-width: 1400px) {
+                margin-bottom: 26px;
+            }
+        }
+
+        &_name {
+            color: #2B2A29;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 52px;
+        }
+
+        &_titleText {
+            color: #792426;
+            font-size: 32px;
+            font-weight: 700;
+            width: 280px;
+            margin-bottom: 16px;
+
+            @media (max-width: 1400px) {
+                margin-bottom: 4px;
+            }
+        }
+
+        &_text {
+            font-size: 24px;
+            color: #2B2A29;
+        }
+
+        &_boxRange {
+            display: flex;
+
+            @media (max-width: 1650px) {
+                flex-direction: column;
+            }
+        }
+
+        &_boxButton {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+            }
+        }
+
+        &_button {
+            max-width: 512px;
+            width: 100%;
+        }
+
+        &_buttonSvg {
+            gap: 16px;
+        }
+        @media (max-width: 1000px) {
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+}

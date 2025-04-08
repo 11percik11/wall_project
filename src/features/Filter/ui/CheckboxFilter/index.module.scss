@@ -1,0 +1,20 @@
+.title {
+    color: #514F4D;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.boxInput {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.butonText {
+    font-size: 18px;
+    font-weight: 700;
+    color: #CF3337;
+    cursor: pointer;
+}

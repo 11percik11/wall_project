@@ -1,0 +1,16 @@
+.buttonFilter {
+    display: flex;
+    align-items: center;
+
+    &__button {
+        width: 280px;
+    }
+
+    &__filter {
+        gap: 16px;
+    }
+
+    &__buttonMargin {
+        margin-left: 20px;
+    }
+}

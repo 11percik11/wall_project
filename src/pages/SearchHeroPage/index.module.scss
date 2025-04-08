@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 20px;
+
+    @media (max-width: 1000px) {
+      gap: 0;
+    }
+  }
+
+body {
+    background: url('../../shared/assets/foto/fon3.png');
+    background-size: cover;
+}

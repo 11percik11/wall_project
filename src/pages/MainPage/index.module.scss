@@ -1,0 +1,37 @@
+.mainpage__boxButton {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    &_button {
+        width: 576px;
+        gap: 16px;
+    }
+}
+
+.boxFilter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 43px;
+
+    &__filterText {
+        margin-left: 40px;
+        font-size: 40px;
+        font-weight: 400;
+        color: #514F4D;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        &_count {
+            width: 62px;
+            height: 46px;
+            font-size: 40px;
+            font-weight: 400;
+            background: #CF3337;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+}

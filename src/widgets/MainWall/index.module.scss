@@ -1,0 +1,59 @@
+.scrollContainer {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 0px,
+    black calc(100% - 200px),
+    transparent
+  );
+  margin-right: -80px;
+  width: calc(100% + 80px);
+  user-select: none;
+  cursor: grab;
+  margin-bottom: 40px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  @media (max-width: 650px) {
+    margin-right: -20px;
+    width: calc(100% + 20px);
+  }
+
+  @media (max-width: 425px) {
+    margin-right: -10px;
+    width: calc(100% + 10px);
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-rows: repeat(2, 277px);
+  grid-auto-columns: 210px;
+  grid-auto-flow: column; 
+  grid-column-gap: 16px;
+  grid-row-gap: 17px;
+  width: max-content;
+
+  @media (max-width: 1000px) {
+    grid-template-rows: repeat(2, 207px);
+    grid-auto-columns: 157px;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-rows: repeat(2, 138px);
+    grid-auto-columns: 105px;
+  }
+}
+
+.gridItem {
+  position: relative;
+  overflow: hidden;
+}

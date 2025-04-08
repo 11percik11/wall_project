@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  
+    &:focus-visible {
+      outline: 2px solid #0066cc;
+    }
+  }
+  
+  .customCheckbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #8B8785;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  background 0.2s,
+      border-color 0.2s;
+  
+    &.checked {
+      background: #ff0000;
+      border-color: #ff0000;
+    }
+  }
+  
+  .checkmark {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .labelText {
+    font-size: 16px;
+    color: #333;
+  }

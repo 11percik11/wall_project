@@ -1,0 +1,62 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 40px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 508px;
+    height: 100%;
+    background: url('../../shared/assets/foto/fonFilter.png');
+    z-index: 1000;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 40px;
+
+    ::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+
+    &__boxH1 {
+      max-width: 388px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #8B8785;
+
+      &_crossSvg {
+        cursor: pointer;
+      }
+
+      &_text {
+        color: #514F4D;
+        font-size: 40px;
+        font-weight: 400;
+      }
+    } 
+  }
+
+.boxButton {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__item1Button {
+    max-width: 388px;
+    width: 100%;
+  }
+} 
+
+.keyboardWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1014px;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+}
